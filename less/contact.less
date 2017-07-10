@@ -45,7 +45,7 @@
 #nf-field-4 {
     background: #0099cc;
     border: 1px solid #fff;
-    border-radius:2px;
+    border-radius: 2px;
     padding: 10px 20px;
     font-weight: 700;
     color: #fff;
@@ -72,4 +72,14 @@
 
 .widget {
     margin-top: -10px;
+    .nf-form-cont {
+        .nf-form-wrap {
+            .one-third, .one-half {
+                @media screen and (max-width: 600px) {
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+        }
+    }
 }
