@@ -1,0 +1,57 @@
+.navbar-inverse {
+    //background-image:url('../images/OrangeBG.jpg');
+    background-color: #0099cc;
+    border-color: #080808;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    .navbar-nav {
+    @media screen and (min-width:767px) {
+        margin: 45px 0 0 30px;
+        }
+        li {
+            list-style-type: none;
+            display: block;
+            font-size: 1.618rem;
+            font-weight: 700;
+            @media only screen and (min-width: 800px) {
+                &:after {
+                font-family:'fontAwesome';
+                content:'\f111';
+                font-size:5px;
+                color:darken(#0099cc, 10%);
+                position:absolute;
+                top:7px;
+                }
+                &:first-of-type {
+                    &:after {
+                    content:'';
+                    }
+                }
+            }
+            @media only screen and (max-width:600px) {
+                margin:5px 0;
+            }
+            a {
+                //color: #3e3e3e;
+                color: #fff;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                line-height: 1px;
+                transition: all .5s;
+                &:hover {
+                color:darken(#0099cc, 10%);
+                }
+            }
+            @media only screen and (min-width:600px) {
+                display: inline-block;
+            }
+        }
+    }
+}
+.navbar-toggle {
+    position:absolute;
+    left:20px;
+    top:20px;
+}
+.navbar-collapse {
+    text-align: left;
+}
