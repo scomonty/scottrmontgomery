@@ -1,44 +1,59 @@
 .navbar-inverse {
-    //background-image:url('../images/OrangeBG.jpg');
-    background-color: #0099cc;
+    background-color: #DA5B71;
     border-color: #080808;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    .navbar-toggle{
+border-color:#fff;
+        &:focus {
+            background-color: #DA5B71;
+        }
+     .icon-bar {
+    background-color: #f8e4be;
+}
+    }
     .navbar-nav {
-    @media screen and (min-width:767px) {
-        margin: 45px 0 0 30px;
+@media only screen and (min-width:600px) {
+    text-align: center;
+    float:none;
+}
+        @media screen and (min-width: 1200px) {
+            margin: 45px 30px 0 30px;
+            position: relative;
+            transform: translateY(25%);
         }
         li {
             list-style-type: none;
             display: block;
-            font-size: 1.618rem;
-            font-weight: 700;
-            @media only screen and (min-width: 800px) {
+            font-size: 2.618rem;
+            font-family: 'Allerta Stencil', sans-serif;
+            text-transform: uppercase;
+            @media only screen and (min-width: 600px) {
                 &:after {
-                font-family:'fontAwesome';
-                content:'\f111';
-                font-size:5px;
-                color:darken(#0099cc, 10%);
-                position:absolute;
-                top:7px;
+                    font-family:'fontAwesome';
+                    content: '\f005';
+                    font-size: 10px;
+                    color: #E0A1AC;
+                    position: absolute;
+                    top: 5px;
+                    left:-3px;
                 }
                 &:first-of-type {
                     &:after {
-                    content:'';
+                        content: '';
                     }
                 }
             }
-            @media only screen and (max-width:600px) {
-                margin:5px 0;
+            @media only screen and (max-width:1200px) {
+                margin: 15px 0;
             }
             a {
-                //color: #3e3e3e;
-                color: #fff;
+                color: #f8e4be;
                 padding-top: 10px;
                 padding-bottom: 10px;
                 line-height: 1px;
                 transition: all .5s;
                 &:hover {
-                color:darken(#0099cc, 10%);
+                    color: #84614b;
                 }
             }
             @media only screen and (min-width:600px) {
@@ -47,11 +62,24 @@
         }
     }
 }
+
 .navbar-toggle {
-    position:absolute;
-    left:20px;
-    top:20px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
 }
+
 .navbar-collapse {
     text-align: left;
+}
+
+
+.navbar-nav>li {
+    float:none;
+    @media only screen and (min-width: 600px) {
+    float: none;
+}
+@media only screen and (min-width:1200px) {
+    float:left
+}
 }

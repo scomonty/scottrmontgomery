@@ -1,0 +1,396 @@
+.transition (@transition) {
+    -webkit-transition: @transition;
+    -moz-transition: @transition;
+    -ms-transition: @transition;
+    -o-transition: @transition;
+}
+
+.rotate (@deg) {
+    -webkit-transform: rotate(@deg);
+    -moz-transform: rotate(@deg);
+    -ms-transform: rotate(@deg);
+    -o-transform: rotate(@deg);
+}
+
+.border-radius (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+.translate (@x, @y: 0) {
+    -webkit-transform: translate(@x, @y);
+    -moz-transform: translate(@x, @y);
+    -ms-transform: translate(@x, @y);
+    -o-transform: translate(@x, @y);
+}
+
+.characteristics-wrap {
+    z-index: 5;
+    position: relative;
+    text-align: center;
+    .container {
+        z-index: 3;
+        position: relative;
+    }
+    .circle {
+        .text {
+            margin-bottom: 20px;
+            .header {
+                margin-top: 40px;
+                margin-bottom: 20px;
+                font-size: 5.77777778rem;
+                line-height: 5.8rem;
+                color: #f8e4be;
+                text-transform: uppercase;
+                font-family: 'Allerta Stencil', sans-serif;
+                @media only screen and (min-width: 800px) {
+                    margin-top: 0;
+                }
+            }
+        }
+        .content {
+            a.button {
+                display: none;
+            }
+            .title {
+                display: none;
+            }
+            .full-text {
+                padding: 20px;
+                color: #000;
+                background: #f2f2f2;
+                p {
+                    margin-bottom: 0;
+                    strong {
+                        display: block;
+                        margin-bottom: 15px;
+                        font-weight: bold;
+                    }
+                }
+                .full-title {
+                    font-size: 1rem;
+                    font-weight: 600;
+                }
+            }
+            .svg {
+                display: none;
+                img {
+                    width: 315px;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+            .segment {
+                margin-bottom: 10px;
+            }
+            .numbs {
+                position: absolute;
+                color: rgba(255, 255, 255, .1);
+                z-index: 3;
+                font-size: 14.1666667rem;
+                font-weight: 900;
+            }
+        }
+    }
+    @media only screen and (min-width: 600px) {
+        .circle {
+            .content {
+                .segment {
+                    margin-bottom: 0;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+    @media only screen and (min-width: 800px) {
+        .circle {
+            position: relative;
+            width: 650px;
+            height: 650px;
+            margin: 0 auto;
+            .text {
+                z-index: 10;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-bottom: 0;
+                .translate(-50%, -50%);
+            }
+            .content {
+                a.button {
+                    z-index: 800;
+                    position: absolute;
+                    display: block;
+                    width: 190px;
+                    height: 135px;
+                    &:hover+.title {
+                        color: #fff;
+                        .affiliation-icon {
+                            opacity: 1;
+                        }
+                    }
+                    &:hover+.affiliation-icon {
+                        opacity: .5;
+                    }
+                    &:hover+.title+.full-text {
+                        width: 310px;
+                        height: 310px;
+                    }
+                    &:hover+.title+.full-text+svg.shape {
+                        fill: #DA5B71;
+                    }
+                }
+                .title {
+                    z-index: 10;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    font-weight: bold;
+                    color: rgba(255, 255, 255, .7);
+                    .transition(color .3s ease);
+                }
+                .full-text {
+                    z-index: 50;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    overflow: hidden;
+                    width: 0;
+                    height: 0;
+                    padding: 0;
+                    color: #818181;
+                    background: #DA5B71;
+                    .border-radius(600px);
+                    .translate(-50%, -50%);
+                    .transition(~"width .3s ease, height .3s ease");
+                    img {
+                        margin-top: 20px;
+                    }
+                    .svg {
+                        position: relative;
+                        margin: 10px auto 0;
+                        left: 0!important;
+                        right: 0!important;
+                        top: 0!important;
+                        bottom: 0!important;
+                        .st3 {
+                            fill: #818181;
+                        }
+                    }
+                    .full-title {
+                        color: #000;
+                        font-weight: 600;
+                        font-size: 1.25rem;
+                        margin-top: 10px;
+                    }
+                    p {
+                        padding: 10px 25px 0;
+                    }
+                }
+                .svg {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    width: 325px;
+                    height: 325px;
+                    transform-origin: bottom right;
+                    .transition(fill .3s ease); //fill-opacity: .65;
+                    &.even {
+                        fill: #056cb2;
+                    }
+                    &.odd {
+                        fill: #065e9c;
+                    }
+                }
+                .segment {
+                    display: inline;
+                    padding: 0;
+                    &.seg1 {
+                        a {
+                            top: 44px;
+                            left: 146px;
+                            .rotate(-20deg);
+                        }
+                        .highlight {
+                            color: #DA5B71;
+                        }
+                        .title {
+                            top: 70px;
+                            left: 230px;
+                        }
+                        .svg {
+                            .rotate(360deg);
+                            top: 15px;
+                            left: 65px;
+                        }
+                        .conversation {
+                            top: -10px;
+                            left: -80px;
+                        }
+                        .numbs {
+                            top: 85px;
+                            left: 165px;
+                        }
+                    }
+                    &.seg2 {
+                        a {
+                            top: 81px;
+                            right: 84px;
+                            .rotate(35deg);
+                        }
+                        .title {
+                            top: 145px;
+                            left: 445px;
+                        }
+                        .svg {
+                            .rotate(60deg);
+                            top: 65px;
+                            left: 20px;
+                        }
+                        .eval {
+                            top: -90px;
+                            left: -50px;
+                        }
+                        .numbs {
+                            top: 106px;
+                            left: 399px;
+                        }
+                    }
+                    &.seg3 {
+                        a {
+                            top: 300px;
+                            right: 0;
+                            .rotate(102deg);
+                        }
+                        .title {
+                            top: 400px;
+                            left: 505px;
+                        }
+                        .svg {
+                            .rotate(120deg);
+                            left: -45px;
+                            top: 50px;
+                        }
+                        .letter {
+                            top: -90px;
+                            left: 0;
+                        }
+                        .numbs {
+                            top: 345px;
+                            right: 20px;
+                        }
+                    }
+                    &.seg4 {
+                        a {
+                            right: 150px;
+                            bottom: 38px;
+                            .rotate(159deg);
+                        }
+                        .title {
+                            top: 540px;
+                            left: 310px;
+                        }
+                        .svg {
+                            .rotate(180deg);
+                            top: -15px;
+                            left: -65px;
+                        }
+                        .agreement {
+                            top: -60px;
+                            left: 85px;
+                        }
+                        .numbs {
+                            top: 515px;
+                            right: 175px;
+                        }
+                    }
+                    &.seg5 {
+                        a {
+                            left: 86px;
+                            bottom: 78px;
+                            .rotate(35deg);
+                        }
+                        .title {
+                            top: 450px;
+                            left: 80px;
+                        }
+                        .svg {
+                            .rotate(240deg);
+                            top: -65px;
+                            left: -20px;
+                        }
+                        .orientation {
+                            top: 35px;
+                            left: 70px;
+                        }
+                        .numbs {
+                            top: 490px;
+                            left: 115px;
+                        }
+                    }
+                    &.seg6 {
+                        a {
+                            bottom: 291px;
+                            left: 0;
+                            .rotate(105deg);
+                        }
+                        .title {
+                            top: 210px;
+                            left: 60px;
+                        }
+                        .svg {
+                            .rotate(300deg);
+                            left: 45px;
+                            top: -50px;
+                        }
+                        .success {
+                            top: 45px;
+                            left: -15px;
+                        }
+                        .numbs {
+                            top: 265px;
+                            left: 12px;
+                        }
+                    }
+                    .affiliation-icon {
+                        .rotate(0deg)!important;
+                        width: 85px;
+                        height: auto;
+                        opacity: 0.7;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    .affiliation-icon {
+        display: none!important;
+    }
+    .full-title {
+        margin-top: 85px!important;
+    }
+}
+
+@supports (-ms-ime-align:auto) {
+    /* Edge CSS styles go here */
+    .full-title {
+        margin-top: 85px!important;
+    }
+}
+
+.st0 {
+    opacity: 0.73;
+    fill: #E0A1AC;
+}

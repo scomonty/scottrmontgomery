@@ -4,8 +4,9 @@ function theme_styles() {
 		wp_enqueue_style('normal_css', get_template_directory_uri() . '/styles/normalize.css');
 	wp_enqueue_style('bootstrap_css', get_template_directory_uri() . '/styles/bootstrap.min.css');
 	wp_enqueue_style('awesome_css', get_template_directory_uri() . '/styles/font-awesome.min.css');
+	wp_enqueue_style('animate_css', get_template_directory_uri() . '/styles/animate.min.css');
 	wp_enqueue_style('style_css', get_template_directory_uri() . '/styles/style.css');
-	wp_enqueue_style('style_font', 'http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800"');
+	wp_enqueue_style('style_font', 'http://fonts.googleapis.com/css?family=Allerta+Stencil|Open+Sans:400,600,700,800"');
 }
 
 add_action('wp_enqueue_scripts', 'theme_styles');
@@ -54,4 +55,14 @@ create_widget('Front Page Center', 'front-center', 'Display on the center of the
 create_widget('Front Page Right', 'front-right', 'Display on the right of the screen');
 create_widget('Page Sidebar', 'page', 'Displays the sidebar on the side of the page');
 create_widget('Blog Sidebar', 'blog', 'Displays the blog on the side of the page');
+
+function add_file_types_to_uploads($file_types){
+$new_filetypes = array();
+$new_filetypes['svg'] = 'image/svg+xml';
+$file_types = array_merge($file_types, $new_filetypes );
+return $file_types;
+}
+add_action('upload_mimes', 'add_file_types_to_uploads');
+
 ?>
+

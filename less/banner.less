@@ -1,10 +1,39 @@
 .banner {
-	background-image:url('../images/background-graphic.jpg');
-	background-position: center;
-	background-size: cover;
-	height:600px;
+	background:#DA5B71;
 	width:100%;
-	padding:40px;
 	color:#fff;
-	margin-top: 82px;
+	margin-top:150px;
+	border-bottom:1px solid #000;
+	position:relative;
+	@media only screen and (min-width: 766px) {
+		margin-top: 170px;
+	}
+	@media only screen and (min-width: 991px) {
+			height:972px;
+	}
+	.container {
+			padding:40px;
+	.text{
+		visibility: hidden;
+		position: relative;
+		z-index: 2;
+	}
+	.image{
+		visibility: hidden;
+		position: relative;
+		z-index: 1;
+	.face {
+		display:block;
+		margin:0 auto;
+		@media only screen and (max-width: 991px) {
+			width:100%;
+		}
+	}
+	}
+}
+	.cloud {
+		position:absolute;
+		bottom:0;
+		width:100%;
+	}
 }

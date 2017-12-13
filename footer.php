@@ -1,8 +1,9 @@
-      <footer>  
-        <p>&copy; <?php bloginfo('name'); ?> <?php echo date('Y');?></p>
+      <footer>
+        <p>&copy; <span class="name-footer">webby d llc</span> <?php echo date('Y');?></p>
         <div class="footerSocial">
         <?php include 'includes/social.php'; ?>
         </div>
+        <p class="legal">All Rights Reserved | <a href="sitemap">Sitemap</a> | Designed and Built by Webby D</p>
 
       </footer>
      <!-- /container -->
