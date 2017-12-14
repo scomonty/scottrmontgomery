@@ -1,3 +1,11 @@
+@primary:#DA5B71;
+@primaryLight:#E0A1AC;
+@secondary:#f8e4be;
+@secondaryLight:#e5d699;
+@third:#84614b;
+@font1: 'Open Sans', sans-serif;
+@font2: 'Allerta Stencil', sans-serif;
+
 .transition (@transition) {
     -webkit-transition: @transition;
     -moz-transition: @transition;
@@ -45,9 +53,9 @@
                 margin-bottom: 20px;
                 font-size: 5.77777778rem;
                 line-height: 5.8rem;
-                color: #f8e4be;
+                color: @secondary;
                 text-transform: uppercase;
-                font-family: 'Allerta Stencil', sans-serif;
+                font-family: @font2;
                 @media only screen and (min-width: 800px) {
                     margin-top: 0;
                 }
@@ -62,8 +70,8 @@
             }
             .full-text {
                 padding: 20px;
-                color: #000;
-                background: #f2f2f2;
+                color: @third;
+                background: @primaryLight;
                 p {
                     margin-bottom: 0;
                     strong {
@@ -129,7 +137,7 @@
                     width: 190px;
                     height: 135px;
                     &:hover+.title {
-                        color: #fff;
+                        color: @secondary;
                         .affiliation-icon {
                             opacity: 1;
                         }
@@ -142,7 +150,7 @@
                         height: 310px;
                     }
                     &:hover+.title+.full-text+svg.shape {
-                        fill: #DA5B71;
+                        fill: @primary;
                     }
                 }
                 .title {
@@ -164,8 +172,8 @@
                     width: 0;
                     height: 0;
                     padding: 0;
-                    color: #818181;
-                    background: #DA5B71;
+                    color: @third;
+                    background: @primary;
                     .border-radius(600px);
                     .translate(-50%, -50%);
                     .transition(~"width .3s ease, height .3s ease");
@@ -188,6 +196,7 @@
                         font-weight: 600;
                         font-size: 1.25rem;
                         margin-top: 10px;
+                        font-family: @font2;
                     }
                     p {
                         padding: 10px 25px 0;
@@ -219,7 +228,7 @@
                             .rotate(-20deg);
                         }
                         .highlight {
-                            color: #DA5B71;
+                            color: @primary;
                         }
                         .title {
                             top: 70px;

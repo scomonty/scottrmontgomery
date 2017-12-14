@@ -18,7 +18,25 @@
                                 <div id="firstPanel" class="title highlight">Meet</div>
                                 <div class="full-text">
                                     <div class="full-title">meet</div>
-                                    <p>Our Business Development team will discuss how we can take your office to the next level together. We will talk about your goals, answer any of your questions, and develop a timeline.</p>
+                                    <p>Communication is key throughout any project, but initially the answers to the following questions are most important:</p>
+                                    <ul>
+                                        <li>Why are we doing this project?</li>
+                                        <ul>
+                                            <li>What problem are you trying to fix in creating or updating this website.</li>
+                                        </ul>
+                                        <li>Who will be using your website?</li>
+                                        <ul>
+                                            <li>Remember, your website is being designed to appeal to customers, not yourself.</li>
+                                        </ul>
+                                        <li>What’s the scope of this project?</li>
+                                        <ul>
+                                            <li>What is the timeline you expect this project to be delivered by.</li>
+                                        </ul>
+                                        <li>Budget?</li>
+                                        <ul>
+                                            <li>Is the money you are willing to put in equal to the results you expect to get out.</p></li>
+                                        </ul>
+                                    </ul>
                                 </div>
                                 <div class="svg">
                                     <img src="wp-content/themes/scottrmontgomery/images/wheel-piece.svg" alt="svg circle piece">
@@ -30,7 +48,7 @@
                                 <div class="title">Design</div>
                                 <div class="full-text">
                                     <div class="full-title">Design</div>
-                                    <p>We will gain insight into the financial and operational aspects of your practice and determine a fair value to offer.</p>
+                                    <p>whether we need to start with wireframes or mockups make sure you are happy with the design before any building of the project begins</p>
                                 </div>
                                 <div class="svg">
                                     <img src="wp-content/themes/scottrmontgomery/images/wheel-piece.svg" alt="svg circle piece">
@@ -42,7 +60,7 @@
                                 <div class="title">Build</div>
                                 <div class="full-text">
                                     <div class="full-title">Build</div>
-                                    <p>A letter of intent will be formally presented to you including what it will take to finalize a stable and secure partnership.</p>
+                                    <p>create website that works across all browsers and devices is catered for SEO success.</p>
                                 </div>
                                 <div class="svg">
                                     <img src="wp-content/themes/scottrmontgomery/images/wheel-piece.svg" alt="svg circle piece">
@@ -54,7 +72,7 @@
                                 <div class="title">Review</div>
                                 <div class="full-text">
                                     <div class="full-title">Review</div>
-                                    <p>The purchase and any related agreements are finalized as we work along with your advisors.</p>
+                                    <p>provide you with a look at website and make sure it meets expectations.</p>
                                 </div>
                                 <div class="svg">
                                     <img src="wp-content/themes/scottrmontgomery/images/wheel-piece.svg" alt="svg circle piece">
@@ -66,7 +84,7 @@
                                 <div class="title">deliver</div>
                                 <div class="full-text">
                                     <div class="full-title">deliver</div>
-                                    <p>We will setup agreed upon formats to introduce your team members to the Dimensional Dental team.</p>
+                                    <p>launch your website.  whether you need new hosting and url adress or replacing existing.</p>
                                 </div>
                                 <div class="svg">
                                     <img src="wp-content/themes/scottrmontgomery/images/wheel-piece.svg" alt="svg circle piece">
@@ -78,7 +96,7 @@
                                 <div class="title">Support</div>
                                 <div class="full-text">
                                     <div class="full-title">Support</div>
-                                    <p>After all closing documents are completed, you continue to provide your patients as you always have, and leave the back-end things to us.</p>
+                                    <p>if you plan to update content from CMS yourself will help you understant how that is done. help with any content changes be there if any bugs arrise.</p>
                                 </div>
                                 <div class="svg">
                                     <img src="wp-content/themes/scottrmontgomery/images/wheel-piece.svg" alt="svg circle piece">

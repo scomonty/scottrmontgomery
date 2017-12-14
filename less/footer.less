@@ -1,15 +1,23 @@
+@primary:#DA5B71;
+@primaryLight:#E0A1AC;
+@secondary:#f8e4be;
+@secondaryLight:#e5d699;
+@third:#84614b;
+@font1: 'Open Sans', sans-serif;
+@font2: 'Allerta Stencil', sans-serif;
+
 footer {
     border-top:1px solid #000;
-    background: #DA5B71;
+    background: @primary;
     padding: 40px;
     text-align: center;
     color: #fff;
     p {
-        color:#f8e4be;
+        color:@secondary;
     	    font-size: 2.618rem;
     font-weight: 800;
     line-height: 2.2rem;
-    font-family:'Allerta Stencil', sans-serif;
+    font-family:@font2;
     .name-footer {
 text-transform: uppercase;
     }
@@ -25,6 +33,9 @@ text-transform: uppercase;
                     display: inline-block;
                     margin: 0 auto;
                     padding: 0;
+                    li {
+                        display:inline-block;
+                    }
                 }
             }
         }

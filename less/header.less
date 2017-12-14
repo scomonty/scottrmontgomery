@@ -1,22 +1,27 @@
+@primary: #DA5B71;
+@primaryLight: #E0A1AC;
+@secondary: #f8e4be;
+@secondaryLight: #e5d699;
+@third: #84614b;
+@font1: 'Open Sans', sans-serif;
+@font2: 'Allerta Stencil', sans-serif;
+
 .header-container {
-	text-align: center;
-	@media only screen and (max-width:600px) {
-	text-align: left;
+    text-align: center;
+    @media only screen and (max-width: 600px) {
+        text-align: left;
+    }
+    .logo {
+        width: auto;
+        max-height: 150px;
+        display: block;
+        margin: 10px auto;
+        float: none;
+        @media only screen and (min-width: 1200px) {
+            float:left;
+        }
+    }
 }
-.logo {
-	width:auto;
-	max-height: 150px;
-	display:block;
-		margin:10px auto;
-		float:none;
-	@media only screen and (min-width:1200px) {
-	float:left;
-
-}
-
-}
-}
-
-.navbar-header{
-	display:inline-block;
+.navbar-header {
+    display: inline-block;
 }

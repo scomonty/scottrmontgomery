@@ -1,29 +1,33 @@
-@primary:#3e3e3e;
-@secondry:#E56B1A;
-
-//#DA5B71
-//#E0A1AC
-//#84614b
-//#f8e4be
-//#e5d699
-
-
-
+@primary:#DA5B71;
+@primaryLight:#E0A1AC;
+@secondary:#f8e4be;
+@secondaryLight:#e5d699;
+@third:#84614b;
 @font1: 'Open Sans', sans-serif;
 @font2: 'Allerta Stencil', sans-serif;
 
 body {
-	background:#DA5B71;
+	background:@primary;
 	font-family: @font1;
 }
-h1 {
+.banner-title {
 	font-size: 5.254rem;
 		font-weight:800;
 		font-family: @font2;
-		color:#f8e4be;
+		color:@secondary;
 		text-transform: uppercase;
 		@media only screen and (min-width:600px) {
 			font-size: 12.854rem;
+		}
+}
+h1 {
+	font-size: 3.236rem;
+		font-weight:800;
+		font-family: @font2;
+		color:@secondary;
+		text-transform: uppercase;
+		@media only screen and (min-width:600px) {
+			font-size: 7.2832rem;
 
 		}
 }
@@ -31,7 +35,7 @@ h1 {
 h2 {
 	font-size: 3.236rem;
 	font-family: @font2;
-			color:#f8e4be;
+			color:@secondary;
 			text-transform: uppercase;
 			@media only screen and (min-width:600px) {
 				font-size: 7.2832rem;
@@ -39,10 +43,10 @@ h2 {
 		}
 }
 h3 {
-	color:#84614b;
-	font-size: 3.82656rem;
+	color:@third;
+	font-size: 1.82656rem;
 			@media only screen and (min-width:600px) {
-
+font-size: 3.82656rem;
 		}
 }
 h4 {
@@ -56,7 +60,7 @@ h5 {
 }
 .llc {
 	font-size: 2.618rem;
-	color:#84614b;
+	color:@third;
 			@media only screen and (min-width:600px) {
 
 		}

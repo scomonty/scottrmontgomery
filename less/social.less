@@ -1,61 +1,68 @@
+@primary: #DA5B71;
+@primaryLight: #E0A1AC;
+@secondary: #f8e4be;
+@secondaryLight: #e5d699;
+@third: #84614b;
+@font1: 'Open Sans',
+sans-serif;
+@font2: 'Allerta Stencil',
+sans-serif;
+
 .soc {
-background:#3e3e3e;
-.socialIcons{
-position:absolute;
-	right:0;
-top:10px;
-	margin-right:12px;
-	@media only screen and (min-width:766px) {
-	bottom:0;
-	}
-	@media only screen and (min-width:800px) {
-top:5px;
-}
-
-	ul{
-		li {
-			display:block;
-			margin:0 1px;
-				@media only screen and (min-width:766px) {
-					display:inline-block;
-			float:right;
-
-	}
-			a {
-				i {
-					font-size:3rem;
-					padding:2.5px;
-					color:#f8e4be;
-				}
-			}
-		}
-	}
-}
-.fa-facebook-square,
-.fa-twitter-square,
-.fa-github-square,
-.fa-linkedin-square {
-	transition: color .4s;
-}
-
-.fa-facebook-square{
-	&:hover{
-		color:#3b5998;
-	}
-}
-.fa-twitter-square{
-	&:hover{
-		color:#55acee;
-	}
-}
-.fa-linkedin-square {
-	&:hover{
-    	color:#007bb5;
-	}
-}
-.fa-github-square {
-	&:hover {
-		color:#6e5494;
-	}
-}
+    background: #3e3e3e;
+    .socialIcons {
+        position: absolute;
+        right: 0;
+        top: 10px;
+        margin-right: 12px;
+        @media only screen and (min-width: 766px) {
+            bottom:0;
+        }
+        @media only screen and (min-width:800px) {
+            top: 5px;
+        }
+        ul {
+            li {
+                display: block;
+                margin: 0 1px;
+                @media only screen and (min-width: 766px) {
+                    display:inline-block;
+                    float: right;
+                }
+                a {
+                    i {
+                        font-size: 3rem;
+                        padding: 2.5px;
+                        color: @secondary;
+                    }
+                }
+            }
+        }
+    }
+    .fa-facebook-square,
+    .fa-twitter-square,
+    .fa-github-square,
+    .fa-linkedin-square {
+        transition: color .4s;
+    }
+    .fa-facebook-square {
+        &:hover {
+            color: #3b5998;
+        }
+    }
+    .fa-twitter-square {
+        &:hover {
+            color: #55acee;
+        }
+    }
+    .fa-linkedin-square {
+        &:hover {
+            color: #007bb5;
+        }
+    }
+    .fa-github-square {
+        &:hover {
+            color: #6e5494;
+        }
+    }
 }

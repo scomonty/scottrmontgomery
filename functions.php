@@ -64,5 +64,19 @@ return $file_types;
 }
 add_action('upload_mimes', 'add_file_types_to_uploads');
 
+add_action('login_head', 'my_loginlogo');
+function my_loginURL() {
+    return 'http://www.scottrmontgomery.com';
+}
+add_filter('login_headerurl', 'my_loginURL');
+function my_loginURLtext() {
+    return 'Webby D LLC';
+}
+add_filter('login_headertitle', 'my_loginURLtext');
+function my_logincustomCSSfile() {
+    wp_enqueue_style('login-styles', get_template_directory_uri() . '/login/login_styles.css');
+}
+add_action('login_enqueue_scripts', 'my_logincustomCSSfile');
+
 ?>
 

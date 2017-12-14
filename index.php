@@ -4,7 +4,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 text">
-                <h1>WEBBY<br />D<span class="llc">llc</span></h1>
+                <div class="banner-title">WEBBY
+                    <br />D<span class="llc">llc</span></div>
                 <h2 class="pageTitle">Latest News</h2>
             </div>
             <div class="col-md-6 image">
@@ -15,10 +16,18 @@
     </div>
     <img class="cloud" src="../wp-content/themes/scottrmontgomery/images/clouds.png" alt="">
 </div>
-<div class="container-flex">
-    <div class="row">
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <?php endwhile; endif; ?>
+<div id="news">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h2>Here you will find the latest news coming out of Webby D LLC.</h2>
+                <h3>In addition to blog entries from our founder, Scott Montgomery.</h3>
+            </div>
+            <div class="col-md-4">
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+                <?php endwhile; endif; ?>
+            </div>
+        </div>
     </div>
 </div>
 <?php get_footer(); ?>

@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3 text">
-                <h1>WEBBY<br />D<span class="llc">llc</span></h1>
+                <div class="banner-title">WEBBY<br />D<span class="llc">llc</span></div>
                 <h2>404 error</h2>
             </div>
             <div class="col-md-6 image">

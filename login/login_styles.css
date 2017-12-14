@@ -1,0 +1,40 @@
+/* Change background color and font family */
+body {
+  background: #DA5B71;
+  background-image: url(../images/clouds.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+}
+/* Change Width and Height of Logo Image + Add Custom Image File */
+.login h1 a {
+  background-image: url(logo.png);
+  width: 284px;
+  height: 266px;
+  background-size: 284px 266px;
+}
+/* Add a few changes to the color and style of form itself */
+.login label {
+  color: #f8e4be;
+  display: block;
+  margin-bottom: 1em;
+  font-weight: bold;
+}
+.login form {
+  background:#E0A1AC;
+}
+.login form .input {
+  font-weight: normal;
+}
+.login #backtoblog a, .login #nav a {
+  color: #84614b;
+}
+.login #login_error, .login .message {
+    border-left: 4px solid #f8e4be;
+    padding: 12px;
+    margin-left: 0;
+    margin-bottom: 20px;
+    background-color: #E0A1AC;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+    color:#f8e4be;
+}
