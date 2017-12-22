@@ -1,10 +1,12 @@
-@primary:#DA5B71;
-@primaryLight:#E0A1AC;
-@secondary:#f8e4be;
-@secondaryLight:#e5d699;
-@third:#84614b;
-@font1: 'Open Sans', sans-serif;
-@font2: 'Allerta Stencil', sans-serif;
+@primary: #DA5B71;
+@primaryLight: #E0A1AC;
+@secondary: #f8e4be;
+@secondaryLight: #e5d699;
+@third: #84614b;
+@font1: 'Open Sans',
+sans-serif;
+@font2: 'Allerta Stencil',
+sans-serif;
 
 .transition (@transition) {
     -webkit-transition: @transition;
@@ -49,6 +51,7 @@
         .text {
             margin-bottom: 20px;
             .header {
+                display: none;
                 margin-top: 40px;
                 margin-bottom: 20px;
                 font-size: 5.77777778rem;
@@ -57,6 +60,7 @@
                 text-transform: uppercase;
                 font-family: @font2;
                 @media only screen and (min-width: 800px) {
+                    display:block;
                     margin-top: 0;
                 }
             }
@@ -72,17 +76,23 @@
                 padding: 20px;
                 color: @third;
                 background: @primaryLight;
+                h4 {
+                    font-weight: bold;
+                    font-size: 1.518rem;
+                    margin-bottom: 0;
+                }
                 p {
                     margin-bottom: 0;
                     strong {
                         display: block;
-                        margin-bottom: 15px;
                         font-weight: bold;
                     }
                 }
                 .full-title {
-                    font-size: 1rem;
-                    font-weight: 600;
+                    color: @secondary;
+                    font-size: 2.25rem;
+                    font-family: @font2;
+                    text-transform: uppercase;
                 }
             }
             .svg {
@@ -98,10 +108,13 @@
             }
             .numbs {
                 position: absolute;
-                color: rgba(255, 255, 255, .1);
+                color: rgba(218, 91, 113, .3);
                 z-index: 3;
-                font-size: 14.1666667rem;
+                font-size: 6.1666667rem;
                 font-weight: 900;
+                @media only screen and (min-width: 800px) {
+                    font-size: 20.1666667rem;
+                }
             }
         }
     }
@@ -116,6 +129,11 @@
         }
     }
     @media only screen and (min-width: 800px) {
+        .text-center {
+            position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+        }
         .circle {
             position: relative;
             width: 650px;
@@ -159,8 +177,10 @@
                     top: 0;
                     left: 0;
                     display: block;
-                    font-weight: bold;
-                    color: rgba(255, 255, 255, .7);
+                    color: @secondary;
+                    font-family: @font2;
+                    font-size: 2.9rem;
+                    text-transform: uppercase;
                     .transition(color .3s ease);
                 }
                 .full-text {
@@ -192,11 +212,11 @@
                         }
                     }
                     .full-title {
-                        color: #000;
-                        font-weight: 600;
-                        font-size: 1.25rem;
+                        color: @secondary;
+                        font-size: 2.25rem;
                         margin-top: 10px;
                         font-family: @font2;
+                        text-transform: uppercase;
                     }
                     p {
                         padding: 10px 25px 0;
@@ -211,12 +231,6 @@
                     height: 325px;
                     transform-origin: bottom right;
                     .transition(fill .3s ease); //fill-opacity: .65;
-                    &.even {
-                        fill: #056cb2;
-                    }
-                    &.odd {
-                        fill: #065e9c;
-                    }
                 }
                 .segment {
                     display: inline;
@@ -227,12 +241,9 @@
                             left: 146px;
                             .rotate(-20deg);
                         }
-                        .highlight {
-                            color: @primary;
-                        }
                         .title {
-                            top: 70px;
-                            left: 230px;
+                            top: 100px;
+                            left: 195px;
                         }
                         .svg {
                             .rotate(360deg);
@@ -244,7 +255,7 @@
                             left: -80px;
                         }
                         .numbs {
-                            top: 85px;
+                            top: -30px;
                             left: 165px;
                         }
                     }
@@ -268,7 +279,7 @@
                             left: -50px;
                         }
                         .numbs {
-                            top: 106px;
+                            top: 0px;
                             left: 399px;
                         }
                     }
@@ -279,8 +290,8 @@
                             .rotate(102deg);
                         }
                         .title {
-                            top: 400px;
-                            left: 505px;
+                            top: 350px;
+                            left: 515px;
                         }
                         .svg {
                             .rotate(120deg);
@@ -292,7 +303,7 @@
                             left: 0;
                         }
                         .numbs {
-                            top: 345px;
+                            top: 230px;
                             right: 20px;
                         }
                     }
@@ -303,8 +314,8 @@
                             .rotate(159deg);
                         }
                         .title {
-                            top: 540px;
-                            left: 310px;
+                            top: 515px;
+                            left: 345px;
                         }
                         .svg {
                             .rotate(180deg);
@@ -316,8 +327,8 @@
                             left: 85px;
                         }
                         .numbs {
-                            top: 515px;
-                            right: 175px;
+                            top: 400px;
+                            right: 180px;
                         }
                     }
                     &.seg5 {
@@ -327,8 +338,8 @@
                             .rotate(35deg);
                         }
                         .title {
-                            top: 450px;
-                            left: 80px;
+                            top: 500px;
+                            left: 115px;
                         }
                         .svg {
                             .rotate(240deg);
@@ -340,7 +351,7 @@
                             left: 70px;
                         }
                         .numbs {
-                            top: 490px;
+                            top: 380px;
                             left: 115px;
                         }
                     }
@@ -351,8 +362,8 @@
                             .rotate(105deg);
                         }
                         .title {
-                            top: 210px;
-                            left: 60px;
+                            top: 270px;
+                            left: 25px;
                         }
                         .svg {
                             .rotate(300deg);
@@ -364,8 +375,8 @@
                             left: -15px;
                         }
                         .numbs {
-                            top: 265px;
-                            left: 12px;
+                            top: 150px;
+                            left: 20px;
                         }
                     }
                     .affiliation-icon {

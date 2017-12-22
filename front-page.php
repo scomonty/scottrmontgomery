@@ -7,6 +7,8 @@
           <?php endwhile; endif; ?>
           <?php include 'includes/circle.php'; ?>
           <?php include 'includes/technologies.php'; ?>
+         <?php include 'includes/services-form.php'; ?>
+         <div id="back-top"><a href="#"></a></div>
       </div>
     </div>
      <?php get_footer(); ?>
