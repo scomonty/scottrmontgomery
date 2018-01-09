@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,17 +11,9 @@
         <?php bloginfo('name'); ?>
     </title>
     <?php  wp_head(); ?>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <!-- Hotjar Tracking Code for www.scottrmontgomery.com -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:727972,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
+    <?php include 'includes/hotjar.php'; ?>
 </head>
 
 <body <?php body_class(); ?>>

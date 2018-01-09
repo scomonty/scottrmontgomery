@@ -2,7 +2,7 @@
 @primaryLight:#E0A1AC;
 @secondary:#f8e4be;
 @secondaryLight:#e5d699;
-@third:#84614b;
+@third:#FAFAFA;
 @font1: 'Open Sans', sans-serif;
 @font2: 'Allerta Stencil', sans-serif;
 
@@ -36,12 +36,16 @@
 	background:@primary;
 	padding:40px;
 }
-.whoweare {
-	background:@primary;
-	padding:40px;
-	border-bottom:1px solid #000;
-}
 #services-form {
-	background:@primary;
+	 background:url('../images/bgafd.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
 	padding:40px;
+	overflow: auto;
+}
+.side-right{
+	@media only screen and (min-width:767px) {
+	border-left:4px solid @secondary;
+}
 }

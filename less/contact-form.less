@@ -2,7 +2,7 @@
 @primaryLight:#E0A1AC;
 @secondary:#f8e4be;
 @secondaryLight:#e5d699;
-@third:#84614b;
+@third:#FAFAFA;
 @font1: 'Open Sans', sans-serif;
 @font2: 'Allerta Stencil', sans-serif;
 
@@ -20,7 +20,7 @@
 	}
 }
 .ints {
-	color:#84614b;
+	color:#FAFAFA;
 }
 
 .nf-error-msg, .ninja-forms-req-symbol {
@@ -112,4 +112,18 @@
 
 .submit-container {
 	text-align: center;
+}
+.dwn-btn {
+	color:@primary;
+	.icon {
+		border-left: 1px solid @primary;
+		i {
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+	&:after {
+		background-color:#84dbff;
+	}
 }
