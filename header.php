@@ -11,6 +11,16 @@
         <?php bloginfo('name'); ?>
     </title>
     <?php  wp_head(); ?>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112228636-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-112228636-1');
+</script>
+
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <!-- Hotjar Tracking Code for www.scottrmontgomery.com -->
     <?php include 'includes/hotjar.php'; ?>
