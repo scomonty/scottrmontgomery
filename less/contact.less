@@ -15,7 +15,9 @@
 	font-family: @font1;
 		color:@third;
 		font-size:3.2832rem;
+		@media only screen and (min-width:767px){
 		padding:20px 40px;
+	}
 	a {
 				color:@third;
 		&:hover {
@@ -25,4 +27,30 @@
 }
 }
 
-
+.oneThird {
+	width:100%;
+	clear: none;
+    display:inline-block;
+	@media only screen and (min-width:767px) {
+		    margin-left: 2.064102564102564%;
+		width: 31.623931623931625%
+	}
+}
+.oneHalf {
+	width:100%;
+		clear: none;
+    display:inline-block;
+	@media only screen and (min-width:767px) {
+		    margin-left: 2.064102564102564%;
+		width: 48.717948717948715%
+	}
+}
+.oneFourth {
+	width:100%;
+		clear: none;
+    display:inline-block;
+	@media only screen and (min-width:767px) {
+		    margin-left: 2.064102564102564%;
+	width: 23.076923076923077%
+}
+}

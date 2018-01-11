@@ -45,19 +45,28 @@
     }
     .tech {
         display: inline-block;
-        margin: 10px;
         text-align:center;
+        @media only screen and (min-width:767px) {
+                    margin: 10px;
+        }
         .icon {
-        height:auto;
+            width:45px;
+                    height:auto;
+            @media only screen and (min-width:767px) {
+
         width:85px;
+    }
         }
         .tech-exp {
             display: block;
-                font-size: 1.618rem;
+                font-size: 1.418rem;
             font-weight: 400;
             text-transform: uppercase;
             text-align: center;
             color:@secondary;
+            @media only screen and (min-width:767px) {
+                font-size: 1.618rem;
+            }
         }
     }
 }

@@ -17,8 +17,12 @@ body {
 		font-family: @font2;
 		color:@secondary;
 		text-transform: uppercase;
+		line-height: 5rem;
 		@media only screen and (min-width:600px) {
 			font-size: 12.854rem;
+		}
+		@media only screen and (min-width:767px) {
+			line-height:15rem;
 		}
 }
 h1 {
@@ -71,6 +75,11 @@ h5 {
 }
 .pageTitle{
 	visibility: hidden;
+	margin-top: 0;
+margin-bottom: 10px;
+@media only screen and (min-width:767px) {
+	margin-top: 20px;
+}
 }
 .show {
 	visibility: visible!important;
