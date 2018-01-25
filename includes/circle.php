@@ -1,11 +1,11 @@
 <div id="contact-panel">
     <div class="container">
         <div class="row">
-            <div class="col-md-5 col-dd-5 col-xs-12">
-                <h2>Webby D has worked with businesses large and small.</h2>
+            <div class="col-xs-12">
+                <h2>If it's a website we can build it.</h2>
                 <h3>Curious what that process looks like?</h3>
             </div>
-            <div class="col-md-7 col-dd-7 col-xs-12">
+            <div class="col-xs-12">
                 <div class="characteristics-wrap">
                     <div class="circle">
                         <div class="text">
@@ -102,7 +102,7 @@
                     </div>
                 </div>
             </div>
-                <div class="col-sm-5 col-sm-offset-6">
+                <div class="col-sm-12">
     <div class="contactCTA">
         <a href="contact">Still Have Questions?<br />Let's Talk! <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
     </div>
