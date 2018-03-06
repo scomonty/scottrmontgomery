@@ -1,14 +1,8 @@
-@primary:#DA5B71;
-@primaryLight:#E0A1AC;
-@secondary:#f8e4be;
-@secondaryLight:#e5d699;
-@third:#FAFAFA;
-@font1: 'Open Sans', sans-serif;
-@font2: 'Allerta Stencil', sans-serif;
+@import 'variables.less';
 
 .hands-panel {
 padding:40px;
-border-bottom:1px solid #000;
+border-bottom:1px solid @fifth;
 .spacing {
     padding: 15px;
 }
@@ -42,16 +36,16 @@ border-bottom:1px solid #000;
 
 #nf-field-4 {
     background: #0099cc;
-    border: 1px solid #fff;
+    border: 1px solid @third;
     border-radius: 2px;
     padding: 10px 20px;
     font-weight: 700;
-    color: #fff;
+    color: @third;
     text-transform: uppercase;
     transition: all .5s;
     &:hover {
         color: darken(#0099cc, 10%);
-        background: #fff;
+        background: @third;
         border: 1px solid #0099cc;
         cursor: pointer;
     }

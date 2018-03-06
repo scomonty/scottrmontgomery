@@ -1,10 +1,9 @@
+            <div class="downs">
+                <h2 class="webBuild">If it's a website<br /><span>we can build it</span></h2>
+            </div>
 <div id="contact-panel">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
-                <h2>If it's a website we can build it.</h2>
-                <h3>Curious what that process looks like?</h3>
-            </div>
             <div class="col-xs-12">
                 <div class="characteristics-wrap">
                     <div class="circle">
@@ -19,9 +18,7 @@
                                 <div class="full-text">
                                     <div class="text-center">
                                     <div class="full-title">meet</div>
-                                        <h4>Why are we doing this project?</h4><p>What problem are you trying to fix?</p>
-                                        <h4>Who will be visiting your website?</h4><p>Your website is being designed to appeal to customers, not yourself.</p>
-                                        <h4>What’s the scope of this project?</h4><p>What timeline do you expect the project to be delivered by?</p>
+                                        <p>We'll kick things off with a quick 15 minute no-obligation call to make sure we are a good fit for each other; and that the scope of the project fits within what we are able to deliver.</p>
                                 </div>
                                 </div>
                                 <div class="svg">
@@ -91,7 +88,7 @@
                                 <div class="full-text">
                                     <div class="text-center">
                                     <div class="full-title">Support</div>
-                                    <p>If you plan to update content from CMS yourself we will help you understant how.  We will also be here if anything breaks.</p>
+                                    <p>If you plan to update content from CMS yourself we will help you understand how.  We will also be here if anything breaks.</p>
                                 </div>
                             </div>
                                 <div class="svg">
@@ -102,11 +99,6 @@
                     </div>
                 </div>
             </div>
-                <div class="col-sm-12">
-    <div class="contactCTA">
-        <a href="contact">Still Have Questions?<br />Let's Talk! <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
-    </div>
-    </div>
         </div>
     </div>
 </div>

@@ -1,19 +1,21 @@
-@primary: #DA5B71;
-@primaryLight: #E0A1AC;
-@secondary: #f8e4be;
-@secondaryLight: #e5d699;
-@third: #FAFAFA;
-@font1: 'Open Sans',
-sans-serif;
-@font2: 'Allerta Stencil',
-sans-serif;
+@import 'variables.less';
 
 .navbar-inverse {
     background-color: @primary;
-    border-color: #080808;
+    border-color: @fifth;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    //height:106px;
+            -moz-transition: height .2s ease;
+    -webkit-transition: height .2s ease;
+    -ms-transition: height .2s ease;
+    -o-transition: height .2s ease;
+    transition: height .2s ease;
+    @media only screen and (min-width:500px) {
+        height:auto;
+    }
+
     .navbar-toggle {
-        border-color: #fff;
+        border-color: @third;
         &:focus {
             background-color: @primary;
         }
@@ -34,9 +36,10 @@ sans-serif;
         li {
             list-style-type: none;
             display: block;
-            font-size: 2.618rem;
+            font-size: 1.25em;
             font-family: @font2;
             text-transform: uppercase;
+                padding: 0 15px;
             @media only screen and (min-width: 600px) {
                 &:after {
                     font-family:'fontAwesome';
@@ -57,11 +60,14 @@ sans-serif;
                 margin: 15px 0;
             }
             a {
+                display: inline-block;
                 color: @secondary;
                 padding-top: 10px;
-                padding-bottom: 10px;
+                padding-bottom: 15px;
                 line-height: 1px;
                 transition: all .5s;
+                    padding-left: 0;
+    padding-right: 0;
                 &:hover {
                     color: @third;
                 }
@@ -70,6 +76,16 @@ sans-serif;
                 display: inline-block;
             }
         }
+        .current-menu-item{
+            a{
+            border-bottom: 3px solid @secondary;
+            transition: all .5s;
+            &:hover{
+                border-bottom: 3px solid @third;
+            }
+        }
+
+}
     }
 }
 
@@ -90,4 +106,10 @@ sans-serif;
     @media only screen and (min-width:1200px) {
         float: left
     }
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: @fifth;
+
+    background:@primary;
 }

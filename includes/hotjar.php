@@ -1,3 +1,8 @@
+    <!-- Hotjar Tracking Code for www.scottrmontgomery.com -->
+    <!-- add back in to header to activate -->
+   <!-- <?php include 'includes/hotjar.php'; ?> -->
+
+
 <script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};

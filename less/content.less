@@ -1,10 +1,4 @@
-@primary:#DA5B71;
-@primaryLight:#E0A1AC;
-@secondary:#f8e4be;
-@secondaryLight:#e5d699;
-@third:#FAFAFA;
-@font1: 'Open Sans', sans-serif;
-@font2: 'Allerta Stencil', sans-serif;
+@import 'variables.less';
 
 .container-flex {
 	padding: 40px;
@@ -12,41 +6,31 @@
 .secondary-page {
 	margin-top:107px;
 }
-.legal {
-	color:@third;
-	font-family: @font1;
-	font-size: .9rem;
-	margin-top:10px;
-	@media only screen and (min-width:600px) {
-		font-size: 1.6rem;
-	}
-	a {
-		text-decoration: none;
-		color:@third;
-	}
-}
 #sitemap{
 	padding:40px;
 		margin-top:150px;
-		@media only screen and (min-width: 766px) {
+		@media only screen and (min-width: 760px) {
 		margin-top: 170px;
 	}
 }
-#news {
-	background:@primary;
-	padding:40px;
-}
 #services-form {
-	 background:url('../images/bgmaps.jpg');
+	 background:url('../images/zigs.jpg');
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-	padding:40px;
+	padding:40px 0;
 	overflow: auto;
+	    @media only screen and (min-width:760px) {
+        padding:40px;
+    }
 }
 .side-right{
-	@media only screen and (min-width:767px) {
-	border-left:4px solid @secondary;
+	@media only screen and (min-width:760px) {
+	border-left:1px solid @fourth;
+}
+img {
+	max-width:350px;
+	height:auto;
 }
 }
 .ideas {
@@ -55,8 +39,8 @@ background-repeat: no-repeat;
 	text-transform: uppercase;
 	color:#84dbff;
 	margin-bottom: 40px;
-	font-size: 3.236rem;
-			@media only screen and (min-width:600px) {
-			font-size: 4.5832rem;
-		}
+}
+
+.butters {
+	display:inline-block;
 }

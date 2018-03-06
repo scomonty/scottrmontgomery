@@ -1,18 +1,14 @@
-@primary:#DA5B71;
-@primaryLight:#E0A1AC;
-@secondary:#f8e4be;
-@secondaryLight:#e5d699;
-@third:#FAFAFA;
-@font1: 'Open Sans', sans-serif;
-@font2: 'Allerta Stencil', sans-serif;
+@import 'variables.less';
 
 .contact-formy{
 	padding:40px;
-	background:#E0A1AC;
+	background:rgba(218,91,113, .8);
 	margin-top:40px;
+	margin-bottom:40px;
 }
 
-#nf-form-3-cont {
+#nf-form-3-cont,
+#nf-form-2-cont {
 	input,
 	textarea{
 		padding:10px;
@@ -20,13 +16,35 @@
 	}
 }
 .ints {
-	color:#FAFAFA;
+	color:@third;
 }
 
 .nf-error-msg, .ninja-forms-req-symbol {
-	color:#fff!important;
+	color:@third!important;
 }
 
+#nf-field-22,
+#nf-field-13 {
+    height: 100px;
+}
+
+#nf-field-31-container,
+#nf-field-14-container {
+    margin-bottom: 0;
+}
+#nf-field-31 {
+    margin-top: -40px;
+}
+
+#nf-field-14 {
+	margin-top:-25px;
+}
+
+.grecaptcha-badge {
+box-shadow: none!important;
+    bottom: -25px!important;
+    display:none;
+}
 
 
 @btn-color: @primary;
@@ -34,27 +52,28 @@
 .btn {
 	font-family:@font2;
 	text-transform: uppercase;
-	border-radius: 4px;
+	border-radius: 25px;
 	border: 2px solid @btn-color;
 	color: @secondary;
-	display: inline-block;
-	margin: 0 .25em;
+	display: block;
+	margin: 20px auto 0;
 	overflow: hidden;
 	padding: 24px 60px 24px 16px;
 	position: relative;
 	text-decoration: none;
 	line-height: 1;
 	.btn-content {
-		font-size: 1.2rem;
+		font-size: 0.938em;
+		padding: 0 15px;
 		line-height: 1.2;
-		padding: 0 26px;
 		position: relative;
 		right: 0;
 		transition: right 300ms ease;
 		display: block;
 		text-align: left;
-		@media only screen and (min-width:767px) {
-			font-size: 2.2rem;
+		@media only screen and (min-width:600px){
+		font-size: 1.2em;
+				padding: 0 26px;
 		}
 	}
 	.icon {
@@ -109,7 +128,7 @@
 	}
 }
 .btn.focus, .btn:focus, .btn:hover {
-    color: @secondary;
+    color: @primary;
     text-decoration: none;
 }
 
@@ -118,7 +137,7 @@
 }
 .dwn-btn {
 	color:@primary;
-	background:#f2fbfd;
+	background:@third;
 	&:hover {
 		color:@primary;
 	}
@@ -128,6 +147,23 @@
 			position: relative;
 			top: 50%;
 			transform: translateY(-50%);
+		}
+	}
+}
+a.btn{
+	display: inline-block;
+}
+
+
+.shopify{
+	.btn{
+		border:2px solid @secondary;
+	}
+	p{
+		margin-bottom: 40px;
+		@media only screen and (min-width:992px){
+			margin-bottom: 0;
+
 		}
 	}
 }

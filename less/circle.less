@@ -1,12 +1,4 @@
-@primary: #DA5B71;
-@primaryLight: #E0A1AC;
-@secondary: #f8e4be;
-@secondaryLight: #e5d699;
-@third: #FAFAFA;
-@font1: 'Open Sans',
-sans-serif;
-@font2: 'Allerta Stencil',
-sans-serif;
+@import 'variables.less';
 
 .transition (@transition) {
     -webkit-transition: @transition;
@@ -43,6 +35,7 @@ sans-serif;
     z-index: 5;
     position: relative;
     text-align: center;
+    margin-top: 100px;
     .container {
         z-index: 3;
         position: relative;
@@ -75,7 +68,7 @@ sans-serif;
             .full-text {
                 padding: 20px;
                 color: @third;
-                background: @primaryLight;
+                background: rgba(218,91,113,0.8);
                 h4 {
                     font-weight: bold;
                     font-size: 1.518rem;
@@ -108,7 +101,7 @@ sans-serif;
             }
             .numbs {
                 position: absolute;
-                color: rgba(132, 219, 255, .3);
+                color: rgba(69, 69, 69, .3);
                 z-index: 3;
                 font-size: 6.1666667rem;
                 font-weight: 900;
@@ -413,4 +406,35 @@ sans-serif;
 .st0 {
     opacity: 0.73;
     fill: #E0A1AC;
+}
+
+.downs{
+    background:@fourth;
+    position:relative;
+    &:after{
+content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 8vw solid @fourth;
+    border-right: 50vw solid transparent;
+    border-left: 49vw solid transparent;
+}
+.webBuild {
+    text-align: center;
+    margin: 0;
+    padding-top:20px;
+    font-size: 3.236rem;
+            @media only screen and (min-width:600px) {
+            font-size: 6.5832rem;
+        }
+        span {
+                font-size: 2.936rem;
+            @media only screen and (min-width:600px) {
+            font-size: 5.5832rem;
+        }
+    }
+}
 }

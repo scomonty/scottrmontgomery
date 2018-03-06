@@ -1,0 +1,67 @@
+@import 'variables.less';
+
+
+#offer-panel{
+		padding:40px 0;
+	border-bottom:1px solid @fifth;
+	text-align: center;
+    position: relative;
+	    @media only screen and (min-width:760px) {
+        padding:40px;
+    }
+     &:after {
+        clear: both;
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+  @media only screen and (min-width:760px) {
+            -webkit-background-size: 3000px 182px;
+    background-size: 3000px 182px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    visibility: visible;
+    z-index: 10;
+    background-image: url(../images/curve-features-bottom.red.svg);
+    bottom: -181px;
+    height: 182px;
+    }
+  }
+    h2 {
+    	text-align: center;
+    color:@fourth;
+    }
+    img {
+    	width:100%;
+    	height:auto;
+    	margin-top:0;
+    	@media only screen and (min-width:500px) {
+    		width:auto;
+    	}
+    	@media only screen and (min-width:991px) {
+    		margin-top:20px;
+    	}
+    }
+    .shopify {
+        @media only screen and (min-width:992px){
+            position: relative;
+    top: 50%;
+    -webkit-transform: translateY(50%);
+    -ms-transform: translateY(50%);
+    transform: translateY(50%);
+        }
+    }
+    p{
+        color:@third;
+    }
+    .no-risk{
+        text-transform: uppercase;
+        color:@secondary;
+        font-weight: 600;
+    }
+}

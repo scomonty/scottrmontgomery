@@ -1,41 +1,73 @@
-@primary:#DA5B71;
-@primaryLight:#E0A1AC;
-@secondary:#f8e4be;
-@secondaryLight:#e5d699;
-@third:#FAFAFA;
-@font1: 'Open Sans', sans-serif;
-@font2: 'Allerta Stencil', sans-serif;
+@import 'variables.less';
+
 
 .banner {
 	background:@primary;
 	width:100%;
-	color:#fff;
-	margin-top:100px;
+	color:@third;
 	position:relative;
-	@media only screen and (min-width: 766px) {
-		margin-top: 170px;
+	@media only screen and (min-width: 992px) {
+			height:600px;
 	}
-	@media only screen and (min-width: 991px) {
+	@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
 			height:772px;
 	}
 	.container {
-			padding:40px;
+			padding:30px 40px 40px;
 	.text{
 		visibility: hidden;
 		position: relative;
 		z-index: 2;
+		.banner-title {
+	font-size: 2.394em;
+		font-weight:800;
+		font-family: @font2;
+		color:@secondary;
+		text-transform: uppercase;
+			line-height:1.2;
+		@media only screen and (min-width:760px) {
+			font-size:4.994em;
+		}
+		@media only screen and (min-width:992px) {
+						font-size: 7.994em;
+		}
+		.llc {
+				color:@third;
+				font-size:.478em;
+						@media only screen and (min-width:760px) {
+	font-size: 2.618rem;
+}
+}
+}
 	}
 	.image{
 		visibility: hidden;
 		position: relative;
 		z-index: 1;
+		margin-top:0px;
+		@media only screen and (max-width:991px) {
+			margin-top:6px;
+		}
+		@media only screen and (max-width:767px) {
+			margin-top:-95px;
+		}
 	.face {
 		display:block;
 		margin:0 auto;
-		@media only screen and (max-width: 991px) {
-			width:100%;
-		}
+			width:auto;
+			height:100%;
+			max-height:400px;
+		@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+		width:auto;
+		height:100%;
+		max-height: 600px;
 	}
+}
+}
+	.home-img {
+		@media only screen and (max-width:767px) {
+			margin-top:-94px;
+		}
 	}
 }
 	.cloud {
@@ -43,4 +75,20 @@
 		bottom:0;
 		width:100%;
 	}
+	.pageTitle{
+		color:@fifth;
+	visibility: hidden;
+	margin-top: 0;
+margin-bottom: 10px;
+position:absolute;
+@media only screen and (min-width:760px) {
+	margin-top: 20px;
+}
+@media only screen and (max-width:991px) {
+	font-size:1.5em;
+}
+@media only screen and (max-width: 760px) {
+	margin-top:80px;
+}
+}
 }

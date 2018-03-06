@@ -1,10 +1,4 @@
-@primary: #DA5B71;
-@primaryLight: #E0A1AC;
-@secondary: #f8e4be;
-@secondaryLight: #e5d699;
-@third: #FAFAFA;
-@font1: 'Open Sans', sans-serif;
-@font2: 'Allerta Stencil', sans-serif;
+@import 'variables.less';
 
 .header-container {
     text-align: center;
@@ -12,13 +6,18 @@
         text-align: left;
     }
     .logo {
-        max-height: 85px;
+        height: 85px;
         width: auto;
         display: block;
         margin: 10px auto;
         float: none;
+        -moz-transition: height .2s ease;
+    -webkit-transition: height .2s ease;
+    -ms-transition: height .2s ease;
+    -o-transition: height .2s ease;
+    transition: height .2s ease;
         @media only screen and (min-width: 767px) {
-                    max-height: 150px;
+                    height: 120px;
         }
         @media only screen and (min-width: 1200px) {
             float:left;
@@ -28,3 +27,26 @@
 .navbar-header {
     display: inline-block;
 }
+
+#page-nav-sticky-wrapper {
+    z-index: 999;
+    position:relative;
+    &.is-sticky{
+        .navbar-inverse {
+                height:85px;
+    @media only screen and (min-width:500px) {
+        height:auto;
+    }
+            .header-container{
+                .logo {
+                    height:100px;
+                    @media only screen and (max-width:500px) {
+                        height:65px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

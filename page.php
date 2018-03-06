@@ -7,4 +7,5 @@
         </div> <!-- end page header -->
         <p>No content currently available for this page.</p>
         <?php endif; ?>
+        <div id="back-top"><a href="#"></a></div>
 <?php get_footer(); ?>

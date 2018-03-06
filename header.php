@@ -22,15 +22,14 @@
 </script>
 
     <script src='https://www.google.com/recaptcha/api.js'></script>
-    <!-- Hotjar Tracking Code for www.scottrmontgomery.com -->
-    <?php include 'includes/hotjar.php'; ?>
 </head>
 
 <body <?php body_class(); ?>>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="page-nav">
+                <?php include 'includes/social.php'; ?>
         <div class="container header-container">
             <a href="<?php echo home_url(); ?>">
-              <img class="logo" src="http://www.scottrmontgomery.com/wp-content/themes/scottrmontgomery/images/logo.png" alt="Scott R Montgomery Logo">
+              <img class="logo" src="http://www.scottrmontgomery.com/wp-content/themes/scottrmontgomery/images/logo.svg" alt="Scott R Montgomery Logo">
             </a>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -50,5 +49,4 @@
             </div>
             <!--/.navbar-collapse -->
         </div>
-        <?php include 'includes/social.php'; ?>
     </nav>

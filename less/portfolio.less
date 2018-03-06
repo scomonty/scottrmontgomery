@@ -1,17 +1,56 @@
-@primary:#DA5B71;
-@primaryLight:#E0A1AC;
-@secondary:#f8e4be;
-@secondaryLight:#e5d699;
-@third:#FAFAFA;
-@font1: 'Open Sans', sans-serif;
-@font2: 'Allerta Stencil', sans-serif;
+@import 'variables.less';
 
 .portfolio-text {
 	padding:40px;
-		border-bottom:1px solid #000;
-	}
+    background:linear-gradient(0deg, @secondary, @third 75%);
+		border-bottom:1px solid @fifth;
+            position:relative;
+    margin-top:-10px;
+     &:after {
+        clear: both;
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+  @media only screen and (min-width:760px) {
+            -webkit-background-size: 3000px 182px;
+    background-size: 3000px 182px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    visibility: visible;
+    z-index: 10;
+    background-image: url(../images/curve-features-bottom.016096b864a7.svg);
+    bottom: -181px;
+    height: 182px;
+    }
+  }
+  @media only screen and (min-width:990px) {
+        margin-top:0;
+    }
+    .liner {
+    border-bottom: 3px solid @fourth;
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    color: @fourth;
+    font-weight: 700;
+    display: inline-block;
+}
+h1 {
+    color:@primary;
+}
+}
+
 	.portfolio-content{
-		padding:40px;
+		background:@fourth;
+        padding:40px 0;
+        @media only screen and (min-width:760px) {
+        padding:180px 40px 40px;
+    }
 	}
 .ports {
     text-align: center;
@@ -20,5 +59,7 @@
     img {
         height: auto;
         width: 100%;
+        border:2px solid @secondary;
+        border-radius:5px;
     }
 }

@@ -1,0 +1,71 @@
+@import 'variables.less';
+
+.contact-wave {
+	background:@secondary;
+	position:relative;
+  padding:40px 0;
+      @media only screen and (min-width:760px) {
+      padding:0;
+    }
+	&:before {
+  	    	clear: both;
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+  	@media only screen and (min-width:760px) {
+  		-webkit-background-size: 3000px 108px;
+    background-size: 3000px 108px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    visibility: visible;
+    z-index: 10;
+    background-image: url(../images/curve-features-top.6f18a86e68c2.svg);
+    height: 108px;
+    top: -108px;
+  	}
+  }
+ &:after {
+    	clear: both;
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+  @media only screen and (min-width:760px) {
+    	    -webkit-background-size: 3000px 182px;
+    background-size: 3000px 182px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    visibility: visible;
+    z-index: 10;
+    background-image: url(../images/curve-features-bottom.016096b864a7.svg);
+    bottom: -181px;
+    height: 182px;
+    }
+  }
+  h2 {
+    color:@primary;
+
+  }
+  .headEm {
+    color:@fourth;
+}
+.side-right{
+  border:none;
+  display:none;
+  @media only screen and (min-width:767px){
+    display:inline-block;
+  text-align: right;
+}
+}
+}

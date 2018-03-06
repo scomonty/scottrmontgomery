@@ -1,0 +1,63 @@
+@import 'variables.less';
+
+#news {
+    background: @third;
+    padding: 40px 0;
+    position: relative;
+    &:after {
+        clear: both;
+        content: '';
+        display: block;
+        height: 0;
+        visibility: hidden;
+        @media only screen and (min-width: 760px) {
+            -webkit-background-size: 3000px 182px;
+            background-size: 3000px 182px;
+            background-position: center bottom;
+            background-repeat: no-repeat;
+            content: '';
+            display: block;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            visibility: visible;
+            z-index: 10;
+            background-image: url(../images/curve-features-white.svg);
+            bottom: -181px;
+            height: 182px;
+        }
+    }
+    .liner {
+        border-bottom: 3px solid @fourth;
+        text-transform: uppercase;
+        font-size: 1.9rem;
+        color: @fourth;
+        font-weight: 700;
+        display: inline-block;
+    }
+    h1 {
+        color: @primary;
+    }
+}
+
+#blog {
+    background: url(../images/glasses.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 40px 0;
+    overflow: auto;
+    border-bottom: 1px solid @fifth;
+    min-height: 500px;
+    @media only screen and (min-width: 760px){
+        padding: 180px 40px 40px;
+    }
+    h2 {
+    	font-family: @font1;
+    	color:@fifth;
+    	font-size: 1.375em;
+    	@media only screen and (min-width: 600px) {
+    font-size: 1.953em;
+}
+    }
+}

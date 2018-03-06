@@ -8,4 +8,8 @@ $(document).ready(function() {
 		setTimeout(function(){
 		$('.pageTitle').addClass('show animated rubberBand')
 	}, 1800);
+
+		  $("#page-nav").sticky({
+    topSpacing: 0
+  });
 })

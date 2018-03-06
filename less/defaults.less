@@ -1,86 +1,62 @@
-@primary:#DA5B71;
-@primaryLight:#E0A1AC;
-@secondary:#f8e4be;
-@secondaryLight:#e5d699;
-@third:#FAFAFA;
-@fourth:#b4e2f8;
-@font1: 'Open Sans', sans-serif;
-@font2: 'Allerta Stencil', sans-serif;
+@import 'variables.less';
 
 body {
 	background:@primary;
 	font-family: @font1;
-}
-.banner-title {
-	font-size: 5.254rem;
-		font-weight:800;
-		font-family: @font2;
-		color:@secondary;
-		text-transform: uppercase;
-		line-height: 5rem;
-		@media only screen and (min-width:600px) {
-			font-size: 12.854rem;
-		}
-		@media only screen and (min-width:767px) {
-			line-height:15rem;
-		}
+	overflow-x: hidden;
+	font-size:13px;
+	line-height: 1.2;
+	color:@fifth;
+		@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+			font-size:16px;
+	}
 }
 h1 {
-	font-size: 3.236rem;
-		font-weight:800;
+font-size:1.563em;
+		font-weight:600;
 		font-family: @font2;
-		color:@secondary;
 		text-transform: uppercase;
-		@media only screen and (min-width:600px) {
-			font-size: 4.5832rem;
-
-		}
+			line-height: 1.2;
+			@media only screen and (min-width:600px) {
+					font-size: 2.441em;
+			}
 }
 
 h2 {
-	font-size: 3.236rem;
+	font-size: 1.563em;
 	font-family: @font2;
-			color:@secondary;
 			text-transform: uppercase;
-			@media only screen and (min-width:600px) {
-				font-size: 3.5832rem;
-
-		}
+				line-height: 1.2;
+				color:@secondary;
+							@media only screen and (min-width:600px) {
+					font-size: 2.441em;
+			}
 }
 h3 {
+	font-size:1.375em;
 	color:@third;
-	font-size: 1.82656rem;
-			@media only screen and (min-width:600px) {
-font-size: 3.82656rem;
+		line-height: 1.2;
+		font-family: @font1;
+		@media only screen and (min-width:600px) {
+			font-size: 1.953em;
 		}
 }
 h4 {
-	font-size: 1.618rem;
-			@media only screen and (min-width:600px) {
-
-		}
+	font-size: 1.563em;
+		line-height: 1.2;
 }
 h5 {
-	font-size:0.618rem;
+	font-size:1.25rem;
+		line-height: 1.2;
 }
-.llc {
-	font-size: 2.618rem;
-	color:@third;
-			@media only screen and (min-width:600px) {
-
-		}
+p{
+	font-size: 1.25em;
+		line-height: 1.2;
 }
 .container{
 	position:relative;
 }
-.pageTitle{
-	visibility: hidden;
-	margin-top: 0;
-margin-bottom: 10px;
-@media only screen and (min-width:767px) {
-	margin-top: 20px;
-}
-}
+
 .show {
 	visibility: visible!important;
 }
@@ -90,7 +66,6 @@ p:empty {
 .nf-form-fields-required {
   display: none;
 }
-
-.headEm {
-	color:@fourth;
+.cent{
+	text-align: center;
 }

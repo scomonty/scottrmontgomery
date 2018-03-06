@@ -1,12 +1,4 @@
-@primary: #DA5B71;
-@primaryLight: #E0A1AC;
-@secondary: #f8e4be;
-@secondaryLight: #e5d699;
-@third: #FAFAFA;
-@font1: 'Open Sans',
-sans-serif;
-@font2: 'Allerta Stencil',
-sans-serif;
+@import 'variables.less';
 
 .soc {
     background: #3e3e3e;
@@ -15,6 +7,10 @@ sans-serif;
         right: 0;
         top: 10px;
         margin-right: 12px;
+        display: none;
+        @media only screen and (min-width:500px){
+            display:block;
+        }
         @media only screen and (min-width: 766px) {
             bottom:0;
         }
@@ -31,11 +27,11 @@ sans-serif;
                 }
                 a {
                     i {
-                        font-size: 2rem;
+                        font-size: 1.1em;
                         padding: 2.5px;
                         color: @secondary;
                         @media only screen and (min-width: 766px) {
-                            font-size: 3rem;
+                            font-size: 1.4em;
                         }
                     }
                 }

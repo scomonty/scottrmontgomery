@@ -1,19 +1,16 @@
-@primary:#DA5B71;
-@primaryLight:#E0A1AC;
-@secondary:#f8e4be;
-@secondaryLight:#e5d699;
-@third:#FAFAFA;
-@font1: 'Open Sans', sans-serif;
-@font2: 'Allerta Stencil', sans-serif;
+@import 'variables.less';
 
 #about-panel {
-    background:url('../images/bgafd.jpg');
+    background:url('../images/compBG.jpg');
 background-size: cover;
 background-position: center;
 background-repeat: no-repeat;
-    padding:40px;
+    padding:40px 0;
     overflow: auto;
-    border-bottom:1px solid #000;
+    border-bottom:1px solid @fifth;
+    @media only screen and (min-width:760px) {
+        padding:180px 40px 40px;
+    }
     .picture {
         padding: 0;
         img {
@@ -25,4 +22,16 @@ background-repeat: no-repeat;
         text-align: center;
         margin-bottom: 10px;
     }
+    .btncont {
+        text-align: center;
+    }
+    h2 {
+        text-align: center;
+    }
+    h3 {
+        text-align: center;
+    }
+            .yello{
+            color:@secondary;
+        }
 }

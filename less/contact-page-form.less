@@ -1,13 +1,63 @@
-@primary:#DA5B71;
-@primaryLight:#E0A1AC;
-@secondary:#f8e4be;
-@secondaryLight:#e5d699;
-@third:#FAFAFA;
-@font1: 'Open Sans', sans-serif;
-@font2: 'Allerta Stencil', sans-serif;
+@import 'variables.less';
 
-#contact-page-form{
-    padding:40px;
+.contact-page-cta{
+    padding:40px 0;
+    background:linear-gradient(0deg, @fourth, @third 75%);
+    position:relative;
+    margin-top:-10px;
+     &:after {
+    	clear: both;
+    content: '';
+    display: block;
+    height: 0;
+    visibility: hidden;
+  @media only screen and (min-width:760px) {
+    	    -webkit-background-size: 3000px 182px;
+    background-size: 3000px 182px;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    visibility: visible;
+    z-index: 10;
+    background-image: url(../images/curve-features-blue.svg);
+    bottom: -181px;
+    height: 182px;
+    }
+  }
+      @media only screen and (min-width:990px) {
+        margin-top:0;
+    }
+  h2 {
+    color:@primary;
+  }
+  .liner {
+    border-bottom: 3px solid @fourth;
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    color: @fourth;
+    font-weight: 700;
+    display: inline-block;
+}
+}
+.contact-page-form {
+	background:url('../images/table.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+	@media only screen and (min-width:760px) {
+		padding: 180px 0 40px;
+	}
+h1{
+    color:@third;
+    font-family: @font1;
+    font-size: 1.25em;
+    font-weight: 100;
+    text-transform: none;
+}
 }
 
 .g-recaptcha{

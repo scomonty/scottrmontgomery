@@ -1,23 +1,16 @@
-@primary:#DA5B71;
-@primaryLight:#E0A1AC;
-@secondary:#f8e4be;
-@secondaryLight:#e5d699;
-@third:#FAFAFA;
-@font1: 'Open Sans', sans-serif;
-@font2: 'Allerta Stencil', sans-serif;
+@import 'variables.less';
 
 #contact-panel{
-	border-bottom:1px solid #000;
-    background: #84dbff;
-    padding:40px;
+	border-bottom:1px solid @fifth;
+    background:url('../images/blocks.jpg');
+    padding:40px 0;
+        @media only screen and (min-width:760px) {
+        padding:40px;
+    }
     .contactCTA {
 	text-align: center;
 	font-family: @font1;
 		color:@third;
-		font-size:3.2832rem;
-		@media only screen and (min-width:767px){
-		padding:20px 40px;
-	}
 	a {
 				color:@third;
 		&:hover {
@@ -31,7 +24,7 @@
 	width:100%;
 	clear: none;
     display:inline-block;
-	@media only screen and (min-width:767px) {
+	@media only screen and (min-width:760px) {
 		    margin-left: 2.064102564102564%;
 		width: 31.623931623931625%
 	}
@@ -40,7 +33,7 @@
 	width:100%;
 		clear: none;
     display:inline-block;
-	@media only screen and (min-width:767px) {
+	@media only screen and (min-width:760px) {
 		    margin-left: 2.064102564102564%;
 		width: 48.717948717948715%
 	}
@@ -49,7 +42,7 @@
 	width:100%;
 		clear: none;
     display:inline-block;
-	@media only screen and (min-width:767px) {
+	@media only screen and (min-width:760px) {
 		    margin-left: 2.064102564102564%;
 	width: 23.076923076923077%
 }
