@@ -29,7 +29,7 @@
                 <?php include 'includes/social.php'; ?>
         <div class="container header-container">
             <a href="<?php echo home_url(); ?>">
-              <img class="logo" src="http://www.scottrmontgomery.com/wp-content/themes/scottrmontgomery/images/logo.svg" alt="Scott R Montgomery Logo">
+              <img class="logo" src="http://www.webby-d.com/wp-content/themes/scottrmontgomery/images/logo.svg" alt="Scott R Montgomery Logo">
             </a>
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">

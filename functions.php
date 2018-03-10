@@ -63,7 +63,7 @@ add_action('upload_mimes', 'add_file_types_to_uploads');
 
 add_action('login_head', 'my_loginlogo');
 function my_loginURL() {
-    return 'http://www.scottrmontgomery.com';
+    return 'http://www.webby-d.com';
 }
 add_filter('login_headerurl', 'my_loginURL');
 function my_loginURLtext() {
