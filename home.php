@@ -29,16 +29,14 @@
 <div id="blog">
                     <div class="container">
         <div class="row">
-            <div class="col-sm-10 cent col-sm-offset-1">
+            <div class="col-sm-6">
                 <?php if(have_posts()): while (have_posts()): the_post(); ?>
        <article>
        <h2><a href="<?php the_permalink(); ?>"><?php the_title(''); ?></a></h2>
-       <p> By <?php the_author(); ?> on <?php echo the_time('l, F, jS, Y'); ?> in <?php the_category(', '); ?>
-        <a href='<?php comments_link(); ?>'><?php comments_number(); ?></a>
-       </p>
+       <p><?php echo the_time('l, F, jS, Y'); ?></p>
        <?php the_excerpt(); ?>
+       <a href="<?php the_permalink(); ?>">read more</a>
      </article>
-       <?php the_content(); ?>
        <?php endwhile; else: ?>
        <div class="col-sm-5 cent">
       <h2>Well...<br />looks like we've been too busy building websites to add any news up to this point.</h2>
