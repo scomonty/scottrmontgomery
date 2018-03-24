@@ -1,5 +1,4 @@
 <?php
-
 function theme_styles() {
 		wp_enqueue_style('normal_css', get_template_directory_uri() . '/styles/normalize.css');
 	wp_enqueue_style('style_css', get_template_directory_uri() . '/styles/style.css');
@@ -84,4 +83,3 @@ function custom_field_file_path( $paths ){
 }
 
 ?>
-
