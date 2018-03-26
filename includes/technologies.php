@@ -15,7 +15,7 @@
         <div class="row">
             <div class="col-md-12 cent">
                 <h2 class="techies">Technologies we Use</h2>
-                <p>Our websites are built on WordPress or Shopify CMS platforms alongside the Bootstrap framework. Hotjar and Google Analytics are utilized to monitor visitors and where and how they are interacting with your site.</p>
+                <p>Our websites are designed and developed on WordPress or Shopify CMS platforms alongside the Bootstrap framework. Hotjar and Google Analytics are utilized to monitor visitors and where and how they are interacting with your site.</p>
             </div>
                         <div class="col-md-12 cent">
             <?php foreach ($arr as $key => $value) { ?>
